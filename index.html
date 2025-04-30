@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEEE SB CEC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Xx5f1+qU0OYU9/v/jp8eCuWlWOCtKx3i3Xs3VGuHpA07gFf5s+wkpjlQ2xPSz9ybE+fgR1kBbvdS9YEXIOZ3Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand">IEEE</div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <button id="themeToggle" class="theme-toggle-btn">🌙 Toggle Theme</button>
+
+  <header class="hero">
+    <h1>IEEE SB CEC</h1>
+    <p>Empowering Innovation and Excellence</p>
+    <button onclick="joinUs()">Join Us</button>
+  </header>
+
+  <section class="about">
+    <section class="mission-vision-section">
+      <div class="mv-card">
+        <h2>What Is IEEE?</h2>
+        <div class="underline"></div>
+        <p>IEEE is a global association and organization of professionals working toward the development, implementation and maintenance of technology-centered products and services.</p>
+      </div>
+      <div class="mv-card">
+        <h2>Mission</h2>
+        <div class="underline"></div>
+        <p>IEEE will be essential to the global technical community and to technical professionals everywhere, and be universally recognized for the contributions of technology and of technical professionals in improving global conditions.</p>
+      </div>
+      <div class="mv-card">
+        <h2>Vision</h2>
+        <div class="underline"></div>
+        <p>IEEE’s core purpose is to foster technological innovation and excellence for the benefit of humanity.</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-box cec">
+        <h2>CEC</h2>
+        <p>
+          The Government College of Engineering Chengannur (established in 1993), commonly known as CEC, is an engineering institute in the state of Kerala, India. The college was set up under the auspices of the Institute of Human Resources Development (IHRD) and is affiliated with the APJ Abdul Kalam Technological University (KTU). It currently offers undergraduate degrees in four engineering streams and two postgraduate programs.
+        </p>
+      </div>
+      <div class="about-box ieee">
+        <h2>IEEE SB CEC</h2>
+        <p>
+          IEEE Student Branch College of Engineering Chengannur was formed in mid-1997, with the goal of keeping the students in touch with advancing technology. It is equipped with an IEEE library that was inaugurated in December 1999 and currently functions as the headquarters of IEEE SB CEC. The Student Branch comes under the Kochi Hub of IEEE Kerala Section and is one of the most active Student Branches in the country. IEEE SB CEC has made numerous contributions to its student community that has received widespread recognition across the globe and is the first Student Branch in the Asia-Pacific Region to establish a Women in Engineering Affinity Group.
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <section class="events">
+    <h2>Latest Events</h2>
+    <div class="events-container" id="events-container"></div>
+  </section>
+
+  <section class="testimonial-slider">
+    <h1>Testimonials</h1>
+    <div class="testimonial-container">
+      <div class="testimonial active">
+        <h2>Anjali R. <span>– Final Year, ECE</span></h2>
+        <p>"IEEE SB CEC helped me find a professional family where learning never stops. From coding hackathons to leadership summits, it shaped both my technical and personal growth."</p>
+      </div>
+    </div>
+    <div class="controls">
+      <button onclick="prevTestimonial()">❮ Prev</button>
+      <button onclick="nextTestimonial()">Next ❯</button>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-col logo">
+        <img src="https://cecieee.org/images/IEEE-SB-logo-white-web.png" alt="IEEE Logo" class="ieee-logo">
+        <p>Want to be an IEEE member?<br><a href="#">Get started <strong>here</strong></a></p>
+      </div>
+      <div class="footer-col contact">
+        <h3>Contact Us</h3>
+        <p>
+          IEEE Student Branch,<br>
+          College of Engineering,<br>
+          Chengannur Alapuzha, Kerala<br>
+          Pin: 689121<br>
+          Email: <a href="mailto:chairman_ieee@ceconline.edu">chairman_ieee@ceconline.edu</a>
+        </p>
+      </div>
+    </div>
+    <p class="copyright">
+      Copyright © 2015-2025 IEEE Student Branch CEC<br>
+      Made with <span class="heart">♥</span> for IEEE.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

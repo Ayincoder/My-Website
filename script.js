@@ -25,3 +25,16 @@ function prevTestimonial() {
 
 // Initial display
 showTestimonial(currentIndex);
+// Dark Mode Toggle
+const toggleBtn = document.getElementById('themeToggle');
+
+// Optional: Load theme from localStorage
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+}
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.contains('dark-mode');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
